@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class UserRole {
+public class AppUserRole {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;

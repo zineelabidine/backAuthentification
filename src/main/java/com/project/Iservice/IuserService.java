@@ -1,11 +1,12 @@
 package com.project.Iservice;
 import java.util.List;
-import com.project.entities.User;
+import com.project.entities.AppUser;
 public interface IuserService {
-	public User save(User user);
-	public User update(User user);
+	public AppUser save(AppUser user);
+	public AppUser update(AppUser user);
 	public void delete(Long id);
-	public User getbyId(Long id);
-	public List<User> getAll();
+	public AppUser getbyId(Long id);
+	public List<AppUser> getAll();
 	public void addRoleToUser(String email,String roleName);
+	public AppUser finByEmail(String email);
 }

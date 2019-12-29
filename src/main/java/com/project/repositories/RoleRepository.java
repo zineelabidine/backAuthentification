@@ -2,10 +2,10 @@ package com.project.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.project.entities.UserRole;
+import com.project.entities.AppUserRole;
 
-public interface RoleRepository extends JpaRepository<UserRole, Long>{
+public interface RoleRepository extends JpaRepository<AppUserRole, Long>{
 	
-	public UserRole findByRoleName(String roleName);;
+	public AppUserRole findByRoleName(String roleName);;
 
 }

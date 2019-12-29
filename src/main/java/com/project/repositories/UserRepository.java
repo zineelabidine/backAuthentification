@@ -5,10 +5,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.project.entities.User;
+import com.project.entities.AppUser;
 
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<AppUser, Long> {
 	@Query(value="SELECT u FROM User user WHERE user.email=:email")
-	public User findByEmail(@Param("email") String email);
+	public AppUser findByEmail(@Param("email") String email);
 
 }

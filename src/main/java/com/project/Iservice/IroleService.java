@@ -1,10 +1,10 @@
 package com.project.Iservice;
 import java.util.List;
-import com.project.entities.UserRole;
+import com.project.entities.AppUserRole;
 public interface IroleService {
-	public UserRole save(UserRole userRole);
-	public UserRole update(UserRole userRole);
+	public AppUserRole save(AppUserRole userRole);
+	public AppUserRole update(AppUserRole userRole);
 	public void delete(Long id);
-	public UserRole getById(Long id);
-	public List<UserRole> getAll();
+	public AppUserRole getById(Long id);
+	public List<AppUserRole> getAll();
 }
